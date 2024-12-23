@@ -37,6 +37,7 @@
 - [Configuration](#-configuration)
 - [License](#-license)
 - [Show Your Support](#-show-your-support)
+- [Roadmap](#-roadmap)
 
 ## ✨ Features
 
@@ -201,6 +202,110 @@ MIT License - feel free to use in your own projects!
 ## ⭐ Show Your Support
 
 Give a ⭐️ if this project helped you!
+
+## 📅 Roadmap
+
+### I. Enhanced User Interaction for World Details
+1. **Location Selection**
+   - Implement hierarchical location prompts to allow users to select locations in a structured manner.
+   - Provide detailed descriptions for each location to enhance user understanding and selection accuracy.
+
+2. **Theme and Motif Selection**
+   - Introduce checkbox-style selection for themes and motifs to allow users to select multiple options easily.
+   - Offer explanations for each theme and motif to help users make informed choices.
+
+3. **Lore Element Management**
+   - Add a "Quick Add" feature for lore elements to streamline the addition of new lore.
+   - Develop a dedicated lore menu for more complex edits and management of lore elements.
+   - Ensure that changes to lore are saved and integrated seamlessly into the application.
+
+4. **Integrating World Details into `create_prompt()`**
+   - Incorporate selected locations, themes, and motifs into the prompt generation process.
+   - Emphasize the importance of these elements in the generated prompts.
+   - Integrate contextual and explicit lore references to enrich the prompts.
+
+5. **Example and Further Refinements**
+   - Provide a comprehensive example that demonstrates the integration of world details into the prompt generation process.
+   - Identify areas for further refinement and improvement.
+
+### II. Deeper Character Profile Interaction
+1. **Emotional State**
+   - Offer predefined emotion options and allow for free-form emotion input.
+   - Introduce emotion intensity levels to capture the depth of the character's feelings.
+   - Implement emotion processing to reflect changes in the character's emotional state.
+
+2. **Immediate Goals**
+   - Prompt users to input the character's immediate goals.
+   - Optionally categorize goals by type and relate them to long-term goals.
+
+3. **Relationship Relevance**
+   - Allow users to select relevant relationships and include relationship details in the prompt.
+
+4. **Relationship Dynamics in Focus**
+   - Enable selection of interaction partners and retrieval of relationship descriptions.
+   - Prompt users to input the current state of relationships and incorporate these states into the prompt.
+
+5. **Integrating into `create_prompt()`
+   - Seamlessly integrate character profile interactions into the prompt generation process.
+
+6. **Further Considerations**
+   - Explore additional ways to enhance character profile interactions.
+
+### III. Enhancing Prompt and Story Structure
+1. **Plot Point Integration**
+   - Allow users to select plot points with descriptions and set adherence levels.
+   - Enable marking plot points as completed or modified and prepending plot points to the prompt.
+
+2. **Customizable Chapter Tone and Mood**
+   - Introduce tone and mood selection with optional intensity levels.
+   - Incorporate selected tone and mood into the prompt.
+
+3. **Style Prompt Refinements**
+   - Provide a prompt for style refinements and integrate these refinements into the prompt.
+
+4. **Multi-Part Chapter Generation**
+   - Offer an option for multi-part chapter generation with part-specific prompts.
+   - Combine generated parts into a cohesive chapter.
+
+5. **Example and Further Refinements**
+   - Provide an example that demonstrates the integration of plot points, tone, mood, and style refinements.
+   - Identify areas for further refinement and improvement.
+
+### IV. Advanced Customization and Control
+1. **Direct Prompt Editing**
+   - Introduce a "Show Prompt" option to display and edit the generated prompt.
+   - Implement input validation to ensure the edited prompt is valid.
+
+2. **Parameter Tuning Per Chapter**
+   - Allow users to adjust chapter generation settings and store chapter-specific parameters.
+   - Pass these parameters to the `generate_story()` and `generate_chapter()` functions.
+
+3. **Embedding/Context Selection**
+   - Display top chunks of context and allow users to select relevant chunks for embedding.
+
+4. **Example and Further Refinements**
+   - Provide an example that demonstrates advanced customization and control.
+   - Identify areas for further refinement and improvement.
+
+### V. Implementation Considerations
+1. **TUI Design with `rich`**
+   - Use `rich` panels, layouts, tables, and progress bars to create a user-friendly TUI.
+   - Implement `Prompt.ask()` with choices and `Confirm.ask()` for user inputs.
+
+2. **Error Handling**
+   - Ensure robust input validation and exception handling.
+   - Provide user-friendly error messages.
+
+3. **Modularity**
+   - Develop focused functions with well-defined interfaces and reusable components.
+   - Organize code into modules and packages for better maintainability.
+
+4. **User Experience**
+   - Provide clear instructions, intuitive flow, and feedback mechanisms.
+   - Offer help and documentation, and ensure accessibility.
+
+5. **Example: Combining `rich` Techniques**
+   - Demonstrate the use of `rich` techniques in a comprehensive example.
 
 ---
 Made with ❤️ using Google's Gemini
