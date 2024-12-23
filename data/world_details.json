@@ -1,0 +1,54 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "WorldDetails",
+  "type": "object",
+  "properties": {
+    "locations": {
+      "type": "object",
+      "description": "A collection of locations in the story world.",
+      "additionalProperties": {
+        "type": "object",
+        "properties": {
+          "description": {
+            "type": "string",
+            "description": "A brief description of the location."
+          },
+          "significance": {
+            "type": "string",
+            "description": "The significance of the location in the story."
+          },
+          "places": {
+            "type": "object",
+            "description": "Specific places within the location.",
+            "additionalProperties": {
+              "type": "object",
+              "properties": {
+                "description": {
+                  "type": "string",
+                  "description": "A brief description of the place."
+                }
+              },
+              "required": ["description"]
+            }
+          },
+          "rooms": {
+            "type": "object",
+            "description": "Specific rooms within a building.",
+            "additionalProperties": {
+              "type": "object",
+              "properties": {
+                "description": {
+                  "type": "string",
+                  "description": "A brief description of the room."
+                }
+              },
+              "required": ["description"]
+            }
+          }
+        },
+        "required": ["description", "significance"]
+      }
+    }
+  },
+  "required": ["locations"]
+}

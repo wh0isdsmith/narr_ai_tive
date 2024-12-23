@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "CharacterProfile",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "The name of the character."
+    },
+    "personality": {
+      "type": "string",
+      "description": "A brief description of the character's personality."
+    },
+    "backstory": {
+      "type": "string",
+      "description": "The character's backstory."
+    },
+    "goal": {
+      "type": "string",
+      "description": "The character's main goal or objective."
+    },
+    "relationships": {
+      "type": "object",
+      "description": "Relationships with other characters.",
+      "additionalProperties": {
+        "type": "string",
+        "description": "The relationship description."
+      }
+    },
+    "age": {
+      "type": "integer",
+      "description": "The age of the character."
+    }
+  },
+  "required": ["personality", "backstory", "goal", "relationships", "age"]
+}

@@ -1,0 +1,32 @@
+api:
+  batch_size: 10
+  max_retries: 3
+  rate_limit: 10
+  retry_delay: 3
+embedding:
+  chunk_overlap: 200
+  chunk_size: 5000
+  model: models/embedding-001
+  task_type: retrieval_document
+evaluation:
+  max_iterations: 3
+  metrics_weights:
+    bleu: 0.15
+    lexical_diversity: 0.25
+    rouge_l: 0.25
+    semantic_similarity: 0.35
+  min_quality_score: 0.6
+  rouge_threshold: 0.4  # Add this line
+generation:
+  max_tokens: 8192
+  model: models/gemini-exp-1206
+  temperature: 0.7
+  top_p: 0.9
+paths:
+  cache_file: embeddings_cache.json
+  input_directory: Narr_ai_tive
+  output_file: embeddings.json
+  character_profiles: data/character_profiles.json  # Ensure this line is present
+  world_details: data/world_details.json  # Ensure this line is present
+secrets:
+  api_key_file: secrets.yaml
