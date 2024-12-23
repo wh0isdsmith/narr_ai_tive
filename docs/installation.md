@@ -1,12 +1,30 @@
 # Installation Guide
 
-## Prerequisites
+## Critical Prerequisites
 
+### 1. Document Embeddings
+Before installation, you **must** have:
+- Generated document embeddings using sentence-transformers
+- Placed them in `data/embeddings.json`
+- See [Embeddings Setup Guide](embeddings_setup.md) for details
+
+### 2. System Requirements
 - Python 3.8+
 - [Hatchling](https://hatch.pypa.io/latest/)
 - Google API key (Gemini access)
+- 16GB RAM recommended
+- 2GB free disk space
 
-## Steps
+### 3. Required Files
+Ensure these files exist:
+```
+data/
+├── embeddings.json           # Required before first run
+├── character_profiles.json   # Can be empty, but must exist
+└── world_details.json       # Can be empty, but must exist
+```
+
+## Installation Steps
 
 1. **Clone the repository**
 

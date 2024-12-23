@@ -1,0 +1,47 @@
+# Core AI and ML
+google-cloud-aiplatform>=1.36.0
+sentence-transformers>=2.2.2
+torch>=2.1.0
+transformers>=4.36.0
+numpy>=1.24.0
+
+# Text Processing
+nltk>=3.8.1
+spacy>=3.7.2
+textblob>=0.17.1
+python-docx>=1.0.0
+markdown>=3.5.1
+pdfminer.six>=20221105
+
+# Semantic Search
+faiss-cpu>=1.7.4
+annoy>=1.17.3
+
+# UI and Terminal Interface
+rich>=13.7.0
+textual>=0.44.1
+prompt-toolkit>=3.0.41
+tqdm>=4.66.1
+
+# Data Handling
+pyyaml>=6.0.1
+python-dotenv>=1.0.0
+jsonschema>=4.20.0
+
+# Development Tools
+hatch>=1.7.0
+black>=23.12.0
+mypy>=1.7.1
+pytest>=7.4.3
+pytest-cov>=4.1.0
+
+# Export Formats
+pypdf>=3.17.1
+python-docx>=1.0.0
+ebooklib>=0.18
+
+# Utilities
+requests>=2.31.0
+pathlib>=1.0.1
+typing-extensions>=4.8.0
+loguru>=0.7.2

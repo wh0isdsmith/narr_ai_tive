@@ -98,9 +98,32 @@
 
 ### Prerequisites
 
+Before installing Narr_ai_tive, ensure you have:
+
+#### Required Software
 - Python 3.8+
 - [Hatchling](https://hatch.pypa.io/latest/)
 - Google API key (Gemini access)
+
+#### Required Data Setup
+- Document embeddings in `data/embeddings.json`
+  - See [Embeddings Setup Guide](docs/embeddings_setup.md)
+  - Must be generated before running the application
+  - Uses sentence-transformers format
+  - Required for semantic search functionality
+
+#### Required Files Structure
+```
+data/
+├── embeddings.json     # Your document embeddings
+├── character_profiles.json
+└── world_details.json
+```
+
+#### API Keys
+- Google Gemini API key
+- Store in `secrets.yaml`
+- Never commit this file to version control
 
 ### Installation
 
