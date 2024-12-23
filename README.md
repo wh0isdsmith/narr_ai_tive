@@ -1,73 +1,314 @@
 # Narr_AI_tive 🤖📚
 
-[![PyPI - Version](https://img.shields.io/pypi/v/narr-ai-tive.svg)](https://pypi.org/project/narr-ai-tive)
-[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/narr-ai-tive.svg)](https://pypi.org/project/narr-ai-tive)
+[![Visual Studio](https://custom-icon-badges.demolab.com/badge/Visual%20Studio-5C2D91.svg?&logo=visual-studio&logoColor=white)](#)
+[![Google Gemini](https://img.shields.io/badge/Google%20Gemini-886FBF?logo=googlegemini&logoColor=fff)](#)
+[![Hugging Face](https://img.shields.io/badge/Hugging%20Face-FFD21E?logo=huggingface&logoColor=000)](#)
+[![GitHub Copilot](https://img.shields.io/badge/GitHub%20Copilot-000?logo=githubcopilot&logoColor=fff)](#)
+[![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=fff)](#)
 [![Hatch project](https://img.shields.io/badge/%F0%9F%A5%9A-Hatch-4051b5.svg)](https://github.com/pypa/hatch)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-Transform your storytelling with AI-powered narrative generation.
+> 🚀 A next-generation AI story generator powered by Google's Gemini model
 
-## Table of Contents
+## 📖 Overview
 
+**Narr_ai_tive** is an advanced AI-powered story generator that leverages Google's Gemini model to create rich, engaging narratives. Here is a detailed overview of its features and functionalities:
+
+## 📚 Table of Contents
+
+- [Overview](#-overview)
 - [Features](#-features)
-- [Installation](#-installation)
-- [Development](#%EF%B8%8F-development)
+  - [Advanced Story Generation](#-advanced-story-generation)
+  - [Smart Content Management](#-smart-content-management)
+  - [Quality Metrics](#-quality-metrics)
+  - [Multiple Interfaces](#-multiple-interfaces)
+- [Quick Start](#-quick-start)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
 - [Usage](#-usage)
-- [Contributing](#-contributing)
+  - [Interactive TUI](#interactive-tui)
+  - [CLI Generation](#cli-generation)
+  - [Python API](#python-api)
+- [Project Structure](#-project-structure)
+- [Configuration](#-configuration)
+- [JSON Schemas For World Building And Character Profiles](#-json-schemas-for-world-building-and-character-profiles)
 - [License](#-license)
+- [Show Your Support](#-show-your-support)
+
+### Key Features
+
+1. **Advanced Story Generation**
+   - **Gemini-Powered Generation**: Utilizes Google's cutting-edge language model for generating high-quality stories.
+   - **Multiple Story Styles**: Supports various storytelling styles such as dark fantasy, sci-fi, mystery, and more.
+   - **Character Integration**: Ensures deep character development and consistency throughout the story.
+   - **World Building**: Provides rich details about the story's environment and settings.
+   - **Plot Management**: Tracks context and story progression intelligently.
+
+2. **Smart Content Management**
+   - **Semantic Search**: Uses advanced embeddings to find relevant context for the story.
+   - **Auto-Chunking**: Organizes content intelligently into manageable chunks.
+   - **Caching System**: Efficiently generates stories with smart caching to avoid redundant computations.
+   - **Character Profiles**: Manages detailed character profiles to maintain consistency.
+   - **World Details**: Comprehensive system for managing world-building elements.
+
+3. **Quality Metrics**
+   - **Multi-Metric Evaluation**: Evaluates generated content using metrics like ROUGE, BLEU, and semantic similarity.
+   - **Lexical Analysis**: Checks vocabulary richness and diversity.
+   - **Iterative Improvement**: Regenerates content based on quality metrics to improve the story.
+   - **Configurable Thresholds**: Allows customization of quality standards.
+
+4. **Multiple Interfaces**
+   - **Rich TUI**: Provides a beautiful terminal interface with progress tracking.
+   - **CLI Support**: Supports command-line automation for generating stories.
+   - **Interactive Mode**: Offers dynamic story development through an interactive loop.
+   - **Export Options**: Supports multiple output formats including TXT, MD, and HTML.
+
+### Summary
+
+**Narr_ai_tive** is a comprehensive AI story generation tool that combines advanced language models, rich character and world-building details, and multiple interfaces to create engaging and high-quality narratives.
 
 ## ✨ Features
 
-- 🎯 Intelligent story generation
-- 🔄 Context-aware narrative flow
-- 🎨 Creative plot development
-- ⚡ Fast and efficient processing
+### 🧠 Advanced Story Generation
+- 🤖 **Gemini-Powered Generation** - Leverage Google's cutting-edge language model
+- 🎭 **Multiple Story Styles** - From dark fantasy to sci-fi and beyond
+- 👥 **Character Integration** - Deep character development and consistency
+- 🌍 **World Building** - Rich world details and environment descriptions
+- 📚 **Plot Management** - Smart context tracking and story progression
 
-## 🚀 Installation
+### 🔍 Smart Content Management
+- 🧮 **Semantic Search** - Find relevant context using advanced embeddings
+- 📝 **Auto-Chunking** - Intelligent content organization
+- 💾 **Caching System** - Efficient generation with smart caching
+- 🎭 **Character Profiles** - Detailed character management
+- 🌟 **World Details** - Comprehensive world-building system
 
-```console
-pip install narr-ai-tive
+### 📊 Quality Metrics
+- 📈 **Multi-Metric Evaluation** - ROUGE, BLEU, semantic similarity
+- 📚 **Lexical Analysis** - Vocabulary richness and diversity checks
+- 🔄 **Iterative Improvement** - Quality-based regeneration
+- ⚖️ **Configurable Thresholds** - Customizable quality standards
+
+### 🖥️ Multiple Interfaces
+- 🎨 **Rich TUI** - Beautiful terminal interface with progress tracking
+- ⌨️ **CLI Support** - Command-line automation capabilities
+- 📱 **Interactive Mode** - Dynamic story development
+- 📝 **Export Options** - Multiple output formats (TXT, MD, HTML)
+
+## 🚀 Quick Start
+
+### Prerequisites
+
+- Python 3.8+
+- [Hatchling](https://hatch.pypa.io/latest/)
+- Google API key (Gemini access)
+
+### Installation
+
+```bash
+# Clone repository
+git clone https://github.com/yourusername/Narr_ai_tive.git
+cd Narr_ai_tive
+
+# Create virtual environment
+python -m venv venv
+source venv/bin/activate  # Linux/Mac
+# OR
+venv\Scripts\activate     # Windows
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Setup configuration
+cp config.yaml.example config.yaml
+# Add your API key to secrets.yaml
 ```
 
-For development installation:
+## 💻 Usage
 
-```console
-git clone https://github.com/yourusername/narr-ai-tive.git
-cd narr-ai-tive
-pip install -e ".[dev]"
+### Interactive TUI
+```bash
+python -m app.main
 ```
 
-## 🛠️ Development
+### CLI Generation
+```bash
+# Generate a single chapter
+narr_ai_tive generate --query "A mystical journey begins" --style "epic fantasy"
 
-This project uses [Hatch](https://hatch.pypa.io/) for project management. To get started:
-
-```console
-pip install hatch
-hatch shell
+# Generate with character focus
+narr_ai_tive generate --input story.txt --character "Elena" --situation "dark forest"
 ```
 
-Common commands:
-- `hatch run test` - Run tests
-- `hatch run lint` - Run linters
-- `hatch build` - Build the package
-
-## 📖 Usage
-
+### Python API
 ```python
-from narr_ai_tive import Generator
+from narr_ai_tive import StoryGenerator, load_config
 
-generator = Generator()
-story = generator.create_story("A cyberpunk adventure")
-print(story)
+# Initialize generator
+config = load_config()
+generator = StoryGenerator(config)
+
+# Generate content
+story = generator.generate_chapter(
+    query="Ancient secrets revealed",
+    style="mystery",
+    character="Professor Blake"
+)
 ```
 
-## 🤝 Contributing
+## 🎯 Project Structure
 
-Contributions are welcome! Please feel free to submit a Pull Request.
+```
+📦 Narr_ai_tive
+ ┣ 📂 app
+ ┃ ┣ 📜 chapter.py      # Chapter generation
+ ┃ ┣ 📜 character.py    # Character management
+ ┃ ┣ 📜 context.py      # Context handling
+ ┃ ┣ 📜 export.py       # Story export functionality
+ ┃ ┣ 📜 interactive.py  # Interactive story mode
+ ┃ ┣ 📜 main.py        # Application entry point
+ ┃ ┣ 📜 path_utils.py   # Path resolution utilities
+ ┃ ┣ 📜 plot.py         # Plot management
+ ┃ ┣ 📜 prompt.py       # Prompt engineering
+ ┃ ┣ 📜 semantic_search.py  # Content search
+ ┃ ┣ 📜 session.py      # Session management
+ ┃ ┣ 📜 setup_logging.py # Logging configuration
+ ┃ ┣ 📜 story.py        # Story generation core
+ ┃ ┣ 📜 text_processing.py # Text processing utilities
+ ┃ ┣ 📜 tui.py          # Terminal user interface
+ ┃ ┣ 📜 utils.py        # Utility functions
+ ┃ ┗ 📜 world.py        # World-building management
+ ┣ 📂 data
+ ┃ ┣ 📜 character_profiles.json
+ ┃ ┣ 📜 embeddings.json
+ ┃ ┗ 📜 world_details.json
+ ┣ 📜 config.yaml       # Configuration
+ ┗ 📜 secrets.yaml      # API keys
+```
 
-## 📜 License
+## 🛠️ Configuration
 
-`narr-ai-tive` is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.
+```yaml
+api:
+  batch_size: 10
+  rate_limit: 10
+embedding:
+  chunk_size: 5000
+  model: models/embedding-001
+generation:
+  temperature: 0.7
+  model: models/gemini-exp-1206
+```
+
+## 📚 JSON Schemas For World Building And Character Profiles
+
+`character_profiles.json`
+
+```
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "CharacterProfile",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "The name of the character."
+    },
+    "personality": {
+      "type": "string",
+      "description": "A brief description of the character's personality."
+    },
+    "backstory": {
+      "type": "string",
+      "description": "The character's backstory."
+    },
+    "goal": {
+      "type": "string",
+      "description": "The character's main goal or objective."
+    },
+    "relationships": {
+      "type": "object",
+      "description": "Relationships with other characters.",
+      "additionalProperties": {
+        "type": "string",
+        "description": "The relationship description."
+      }
+    },
+    "age": {
+      "type": "integer",
+      "description": "The age of the character."
+    }
+  },
+  "required": ["personality", "backstory", "goal", "relationships", "age"]
+}
+```
+
+`world_details.json`
+
+```
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "WorldDetails",
+  "type": "object",
+  "properties": {
+    "locations": {
+      "type": "object",
+      "description": "A collection of locations in the story world.",
+      "additionalProperties": {
+        "type": "object",
+        "properties": {
+          "description": {
+            "type": "string",
+            "description": "A brief description of the location."
+          },
+          "significance": {
+            "type": "string",
+            "description": "The significance of the location in the story."
+          },
+          "places": {
+            "type": "object",
+            "description": "Specific places within the location.",
+            "additionalProperties": {
+              "type": "object",
+              "properties": {
+                "description": {
+                  "type": "string",
+                  "description": "A brief description of the place."
+                }
+              },
+              "required": ["description"]
+            }
+          },
+          "rooms": {
+            "type": "object",
+            "description": "Specific rooms within a building.",
+            "additionalProperties": {
+              "type": "object",
+              "properties": {
+                "description": {
+                  "type": "string",
+                  "description": "A brief description of the room."
+                }
+              },
+              "required": ["description"]
+            }
+          }
+        },
+        "required": ["description", "significance"]
+      }
+    }
+  },
+  "required": ["locations"]
+}
+```
+
+## 📝 License
+
+MIT License - feel free to use in your own projects!
+
+## ⭐ Show Your Support
+
+Give a ⭐️ if this project helped you!
 
 ---
-
-Built with 🥚 [Hatch](https://github.com/pypa/hatch)
+Made with ❤️ using Google's Gemini
