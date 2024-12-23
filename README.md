@@ -1,4 +1,8 @@
-# Narr_AI_tive 🤖📚
+<div align="center">
+  <img src="assets/banner.jpeg" alt="Narr.AI.tive Banner" width="100%" />
+</div>
+
+# Narr.AI.tive 🤖📚
 
 [![Visual Studio](https://custom-icon-badges.demolab.com/badge/Visual%20Studio-5C2D91.svg?&logo=visual-studio&logoColor=white)](#)
 [![Google Gemini](https://img.shields.io/badge/Google%20Gemini-886FBF?logo=googlegemini&logoColor=fff)](#)
